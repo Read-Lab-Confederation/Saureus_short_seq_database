@@ -1,0 +1,1530 @@
+N E X T F L O W  ~  version 20.07.1
+Launching `/home/tread/miniconda3/envs/bactopia/share/bactopia-1.4.x/main.nf` [sharp_becquerel] - revision: 81b320646a
+bactopia - 1.4.5
+Found 1 ARIBA datasets
+/home/tread/tiramisu/Staphopia/datasets/ariba/vfdb_core.tar.gz
+Found 5 minmer sketches/signatures
+/home/tread/tiramisu/Staphopia/datasets/minmer/genbank-k21.json.gz
+/home/tread/tiramisu/Staphopia/datasets/minmer/genbank-k31.json.gz
+/home/tread/tiramisu/Staphopia/datasets/minmer/genbank-k51.json.gz
+/home/tread/tiramisu/Staphopia/datasets/minmer/refseq-k21-s1000.msh
+/home/tread/tiramisu/Staphopia/datasets/plasmid/plsdb.msh
+Found 3 PLSDB (plasmid) BLAST files
+tiramisu/Staphopia/datasets/plasmid/plsdb.fna.nin
+tiramisu/Staphopia/datasets/plasmid/plsdb.fna.nhr
+tiramisu/Staphopia/datasets/plasmid/plsdb.fna.nsq
+Found Prokka proteins file
+/home/tread/tiramisu/Staphopia/datasets/species-specific/staphylococcus-aureus/annotation/proteins.faa
+Found Mash Sketch of RefSeq genomes
+/home/tread/tiramisu/Staphopia/datasets/species-specific/staphylococcus-aureus/minmer/refseq-genomes.msh
+Found 2 MLST datasets
+/home/tread/tiramisu/Staphopia/datasets/species-specific/staphylococcus-aureus/mlst/default/default-ariba.tar.gz
+/home/tread/tiramisu/Staphopia/datasets/species-specific/staphylococcus-aureus/mlst/default/default-blastdb.tar.gz
+Found 1 reference genomes
+/home/tread/tiramisu/Staphopia/datasets/species-specific/staphylococcus-aureus/optional/reference-genomes/Staph_ASR.gba
+Found 1 FASTAs to align reads against
+/home/tread/tiramisu/Staphopia/datasets/species-specific/staphylococcus-aureus/optional/mapping-sequences/sccmec_cassettes.fasta
+Found 76 gene FASTAs to query with BLAST
+/home/tread/tiramisu/Staphopia/datasets/species-specific/staphylococcus-aureus/optional/blast/genes/SaPImw2.fasta
+/home/tread/tiramisu/Staphopia/datasets/species-specific/staphylococcus-aureus/optional/blast/genes/ISSau5.fasta
+/home/tread/tiramisu/Staphopia/datasets/species-specific/staphylococcus-aureus/optional/blast/genes/IS1181.fasta
+/home/tread/tiramisu/Staphopia/datasets/species-specific/staphylococcus-aureus/optional/blast/genes/phiPV83.fasta
+/home/tread/tiramisu/Staphopia/datasets/species-specific/staphylococcus-aureus/optional/blast/genes/Tn5801.fasta
+...More than 5, truncating...
+Found 4 primer FASTAs to query with BLAST
+/home/tread/tiramisu/Staphopia/datasets/species-specific/staphylococcus-aureus/optional/blast/primers/primers.fasta
+/home/tread/tiramisu/Staphopia/datasets/species-specific/staphylococcus-aureus/optional/blast/primers/staphopia_short_seqs.fasta
+/home/tread/tiramisu/Staphopia/datasets/species-specific/staphylococcus-aureus/optional/blast/primers/.DS_Store
+/home/tread/tiramisu/Staphopia/datasets/species-specific/staphylococcus-aureus/optional/blast/primers/subtypes.fasta
+Found 3 protein FASTAs to query with BLAST
+/home/tread/tiramisu/Staphopia/datasets/species-specific/staphylococcus-aureus/optional/blast/proteins/VFDB_setA_pro-2020-04-13.fasta
+/home/tread/tiramisu/Staphopia/datasets/species-specific/staphylococcus-aureus/optional/blast/proteins/proteins.fasta
+/home/tread/tiramisu/Staphopia/datasets/species-specific/staphylococcus-aureus/optional/blast/proteins/PSMs_protein.fasta
+If something looks wrong, now's your chance to back out (CTRL+C 3 times).
+Sleeping for 5 seconds...
+[-        ] process > gather_fastqs        -
+[-        ] process > fastq_status         -
+[-        ] process > estimate_genome_size -
+[-        ] process > qc_reads             -
+[-        ] process > qc_original_summary  -
+[-        ] process > qc_final_summary     -
+[-        ] process > assemble_genome      -
+
+[-        ] process > gather_fastqs                   -
+[-        ] process > fastq_status                    -
+[-        ] process > estimate_genome_size            -
+[-        ] process > qc_reads                        -
+[-        ] process > qc_original_summary             -
+[-        ] process > qc_final_summary                -
+[-        ] process > assemble_genome                 -
+[-        ] process > assembly_qc                     -
+[-        ] process > make_blastdb                    -
+[-        ] process > annotate_genome                 -
+[-        ] process > count_31mers                    -
+[-        ] process > sequence_type                   -
+[-        ] process > ariba_analysis                  -
+[-        ] process > minmer_sketch                   -
+[-        ] process > minmer_query                    -
+[-        ] process > call_variants                   -
+[-        ] process > download_references             -
+[-        ] process > call_variants_auto              -
+[-        ] process > update_antimicrobial_resistance -
+[-        ] process > antimicrobial_resistance        -
+[-        ] process > plasmid_blast                   -
+
+executor >  slurm (3)
+[8a/17d398] process > gather_fastqs (2)                   [  0%] 0 of 2
+[-        ] process > fastq_status                        -
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [  0%] 0 of 1
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+
+executor >  slurm (3)
+[8a/17d398] process > gather_fastqs (2)                   [ 33%] 1 of 3, failed: 1, retries: 1
+[-        ] process > fastq_status                        -
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [  0%] 0 of 1
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[8a/17d398] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (1)
+
+executor >  slurm (4)
+[d6/be965a] process > gather_fastqs (2)                   [ 33%] 1 of 3, failed: 1, retries: 1
+[-        ] process > fastq_status                        -
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [  0%] 0 of 1
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[8a/17d398] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (1)
+
+executor >  slurm (5)
+[59/25222e] process > gather_fastqs (2)                   [ 50%] 2 of 4, failed: 2, retries: 2
+[-        ] process > fastq_status                        -
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [  0%] 0 of 1
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[8a/17d398] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (1)
+[d6/be965a] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (2)
+
+executor >  slurm (6)
+[a4/3efce1] process > gather_fastqs (2)                   [ 60%] 3 of 5, failed: 3, retries: 3
+[-        ] process > fastq_status                        -
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [  0%] 0 of 1
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[8a/17d398] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (1)
+[d6/be965a] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (2)
+[59/25222e] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (3)
+
+executor >  slurm (7)
+[c0/bfd09a] process > gather_fastqs (2)                   [ 67%] 4 of 6, failed: 4, retries: 4
+[-        ] process > fastq_status                        -
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [  0%] 0 of 1
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[8a/17d398] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (1)
+[d6/be965a] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (2)
+[59/25222e] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (3)
+[a4/3efce1] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (4)
+
+executor >  slurm (8)
+[b9/f81adc] process > gather_fastqs (2)                   [ 71%] 5 of 7, failed: 5, retries: 5
+[-        ] process > fastq_status                        -
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [100%] 1 of 1 ✔
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[8a/17d398] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (1)
+[d6/be965a] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (2)
+[59/25222e] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (3)
+[a4/3efce1] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (4)
+[c0/bfd09a] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (5)
+
+executor >  slurm (9)
+[a0/cb9aec] process > gather_fastqs (2)                   [ 75%] 6 of 8, failed: 6, retries: 6
+[-        ] process > fastq_status                        -
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [100%] 1 of 1 ✔
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[8a/17d398] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (1)
+[d6/be965a] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (2)
+[59/25222e] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (3)
+[a4/3efce1] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (4)
+[c0/bfd09a] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (5)
+[b9/f81adc] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (6)
+
+executor >  slurm (10)
+[57/7fd556] process > gather_fastqs (2)                   [ 78%] 7 of 9, failed: 7, retries: 7
+[-        ] process > fastq_status                        -
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [100%] 1 of 1 ✔
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[8a/17d398] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (1)
+[d6/be965a] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (2)
+[59/25222e] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (3)
+[a4/3efce1] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (4)
+[c0/bfd09a] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (5)
+[b9/f81adc] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (6)
+[a0/cb9aec] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (7)
+
+executor >  slurm (10)
+[57/7fd556] process > gather_fastqs (2)                   [ 78%] 7 of 9, failed: 7, retries: 7
+[-        ] process > fastq_status                        -
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [100%] 1 of 1 ✔
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[d6/be965a] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (2)
+[59/25222e] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (3)
+[a4/3efce1] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (4)
+[c0/bfd09a] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (5)
+[b9/f81adc] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (6)
+[a0/cb9aec] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (7)
+
+
+executor >  slurm (11)
+[8f/12cffa] process > gather_fastqs (2)                   [ 80%] 8 of 10, failed: 8, retries: 8
+[-        ] process > fastq_status                        -
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [100%] 1 of 1 ✔
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[59/25222e] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (3)
+[a4/3efce1] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (4)
+[c0/bfd09a] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (5)
+[b9/f81adc] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (6)
+[a0/cb9aec] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (7)
+[57/7fd556] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (8)
+
+
+executor >  slurm (11)
+[8f/12cffa] process > gather_fastqs (2)                   [ 90%] 9 of 10, failed: 9, retries: 9
+[-        ] process > fastq_status                        -
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [100%] 1 of 1 ✔
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[59/25222e] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (3)
+[a4/3efce1] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (4)
+[c0/bfd09a] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (5)
+[b9/f81adc] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (6)
+[a0/cb9aec] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (7)
+[57/7fd556] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (8)
+[8f/12cffa] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (9)
+
+executor >  slurm (12)
+[7c/027859] process > gather_fastqs (2)                   [ 82%] 9 of 11, failed: 9, retries: 9
+[-        ] process > fastq_status                        -
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [100%] 1 of 1 ✔
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[a4/3efce1] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (4)
+[c0/bfd09a] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (5)
+[b9/f81adc] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (6)
+[a0/cb9aec] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (7)
+[57/7fd556] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (8)
+[8f/12cffa] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (9)
+
+
+executor >  slurm (12)
+[7c/027859] process > gather_fastqs (2)                   [ 83%] 10 of 12, failed: 10, retries: 10
+[-        ] process > fastq_status                        -
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [100%] 1 of 1 ✔
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[c0/bfd09a] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (5)
+[b9/f81adc] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (6)
+[a0/cb9aec] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (7)
+[57/7fd556] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (8)
+[8f/12cffa] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (9)
+[7c/027859] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (10)
+
+
+executor >  slurm (13)
+[3f/b50864] process > gather_fastqs (2)                   [ 83%] 10 of 12, failed: 10, retries: 10
+[-        ] process > fastq_status                        -
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [100%] 1 of 1 ✔
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[c0/bfd09a] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (5)
+[b9/f81adc] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (6)
+[a0/cb9aec] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (7)
+[57/7fd556] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (8)
+[8f/12cffa] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (9)
+[7c/027859] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (10)
+
+
+executor >  slurm (13)
+[3f/b50864] process > gather_fastqs (2)                   [ 85%] 11 of 13, failed: 11, retries: 11
+[-        ] process > fastq_status                        -
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [100%] 1 of 1 ✔
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[b9/f81adc] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (6)
+[a0/cb9aec] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (7)
+[57/7fd556] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (8)
+[8f/12cffa] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (9)
+[7c/027859] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (10)
+[3f/b50864] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (11)
+
+
+executor >  slurm (14)
+[5d/8b4fdf] process > gather_fastqs (2)                   [ 85%] 11 of 13, failed: 11, retries: 11
+[-        ] process > fastq_status                        -
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [100%] 1 of 1 ✔
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[b9/f81adc] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (6)
+[a0/cb9aec] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (7)
+[57/7fd556] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (8)
+[8f/12cffa] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (9)
+[7c/027859] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (10)
+[3f/b50864] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (11)
+
+
+executor >  slurm (15)
+[63/14912c] process > gather_fastqs (2)                   [ 86%] 12 of 14, failed: 12, retries: 12
+[-        ] process > fastq_status                        -
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [100%] 1 of 1 ✔
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[a0/cb9aec] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (7)
+[57/7fd556] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (8)
+[8f/12cffa] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (9)
+[7c/027859] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (10)
+[3f/b50864] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (11)
+[5d/8b4fdf] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (12)
+
+
+executor >  slurm (15)
+[63/14912c] process > gather_fastqs (2)                   [ 87%] 13 of 15, failed: 13, retries: 13
+[-        ] process > fastq_status                        -
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [100%] 1 of 1 ✔
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[57/7fd556] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (8)
+[8f/12cffa] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (9)
+[7c/027859] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (10)
+[3f/b50864] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (11)
+[5d/8b4fdf] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (12)
+[63/14912c] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (13)
+
+
+executor >  slurm (16)
+[e0/1569b1] process > gather_fastqs (2)                   [ 87%] 13 of 15, failed: 13, retries: 13
+[-        ] process > fastq_status                        -
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [100%] 1 of 1 ✔
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[57/7fd556] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (8)
+[8f/12cffa] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (9)
+[7c/027859] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (10)
+[3f/b50864] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (11)
+[5d/8b4fdf] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (12)
+[63/14912c] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (13)
+
+
+executor >  slurm (17)
+[6e/ba36b2] process > gather_fastqs (2)                   [ 88%] 14 of 16, failed: 14, retries: 14
+[-        ] process > fastq_status                        -
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [100%] 1 of 1 ✔
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[57/7fd556] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (8)
+[8f/12cffa] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (9)
+[7c/027859] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (10)
+[3f/b50864] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (11)
+[5d/8b4fdf] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (12)
+[63/14912c] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (13)
+[e0/1569b1] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (14)
+
+executor >  slurm (18)
+[87/a7d110] process > gather_fastqs (2)                   [ 88%] 15 of 17, failed: 15, retries: 15
+[-        ] process > fastq_status                        -
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [100%] 1 of 1 ✔
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[8f/12cffa] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (9)
+[7c/027859] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (10)
+[3f/b50864] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (11)
+[5d/8b4fdf] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (12)
+[63/14912c] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (13)
+[e0/1569b1] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (14)
+[6e/ba36b2] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (15)
+
+
+executor >  slurm (18)
+[87/a7d110] process > gather_fastqs (2)                   [ 88%] 15 of 17, failed: 15, retries: 15
+[-        ] process > fastq_status                        -
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [100%] 1 of 1 ✔
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[7c/027859] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (10)
+[3f/b50864] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (11)
+[5d/8b4fdf] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (12)
+[63/14912c] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (13)
+[e0/1569b1] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (14)
+[6e/ba36b2] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (15)
+
+
+
+executor >  slurm (19)
+[a2/50d92b] process > gather_fastqs (2)                   [ 94%] 17 of 18, failed: 16, retries: 16
+[-        ] process > fastq_status                        -
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [100%] 1 of 1 ✔
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[3f/b50864] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (11)
+[5d/8b4fdf] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (12)
+[63/14912c] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (13)
+[e0/1569b1] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (14)
+[6e/ba36b2] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (15)
+[87/a7d110] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (16)
+
+
+executor >  slurm (20)
+[a2/50d92b] process > gather_fastqs (2)                   [ 94%] 17 of 18, failed: 16, retries: 16
+[b0/2de45f] process > fastq_status (1)                    [  0%] 0 of 1
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [100%] 1 of 1 ✔
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[3f/b50864] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (11)
+[5d/8b4fdf] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (12)
+[63/14912c] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (13)
+[e0/1569b1] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (14)
+[6e/ba36b2] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (15)
+[87/a7d110] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (16)
+
+
+executor >  slurm (21)
+[18/d12615] process > gather_fastqs (2)                   [ 95%] 18 of 19, failed: 17, retries: 17
+[b0/2de45f] process > fastq_status (1)                    [  0%] 0 of 1
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [100%] 1 of 1 ✔
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[5d/8b4fdf] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (12)
+[63/14912c] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (13)
+[e0/1569b1] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (14)
+[6e/ba36b2] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (15)
+[87/a7d110] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (16)
+[a2/50d92b] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (17)
+
+
+executor >  slurm (22)
+[71/3ee710] process > gather_fastqs (2)                   [ 95%] 19 of 20, failed: 18, retries: 18
+[b0/2de45f] process > fastq_status (1)                    [  0%] 0 of 1
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [100%] 1 of 1 ✔
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[63/14912c] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (13)
+[e0/1569b1] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (14)
+[6e/ba36b2] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (15)
+[87/a7d110] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (16)
+[a2/50d92b] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (17)
+[18/d12615] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (18)
+
+
+executor >  slurm (23)
+[1d/eeae19] process > gather_fastqs (2)                   [ 95%] 20 of 21, failed: 19, retries: 19
+[b0/2de45f] process > fastq_status (1)                    [  0%] 0 of 1
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [100%] 1 of 1 ✔
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[e0/1569b1] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (14)
+[6e/ba36b2] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (15)
+[87/a7d110] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (16)
+[a2/50d92b] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (17)
+[18/d12615] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (18)
+[71/3ee710] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (19)
+
+
+executor >  slurm (23)
+[1d/eeae19] process > gather_fastqs (2)                   [ 95%] 20 of 21, failed: 19, retries: 19
+[b0/2de45f] process > fastq_status (1)                    [  0%] 0 of 1
+[-        ] process > estimate_genome_size                -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [100%] 1 of 1 ✔
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[6e/ba36b2] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (15)
+[87/a7d110] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (16)
+[a2/50d92b] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (17)
+[18/d12615] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (18)
+[71/3ee710] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (19)
+
+
+
+executor >  slurm (25)
+[27/1c9832] process > gather_fastqs (2)                   [ 95%] 21 of 22, failed: 20, retries: 20
+[b0/2de45f] process > fastq_status (1)                    [100%] 1 of 1
+[09/7e942a] process > estimate_genome_size (ERX1033700)   [  0%] 0 of 1
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [100%] 1 of 1 ✔
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[87/a7d110] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (16)
+[a2/50d92b] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (17)
+[18/d12615] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (18)
+[71/3ee710] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (19)
+[1d/eeae19] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (20)
+
+
+executor >  slurm (25)
+[27/1c9832] process > gather_fastqs (2)                   [ 95%] 21 of 22, failed: 20, retries: 20
+[b0/2de45f] process > fastq_status (1)                    [100%] 1 of 1
+[09/7e942a] process > estimate_genome_size (ERX1033700)   [  0%] 0 of 1
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [100%] 1 of 1 ✔
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[87/a7d110] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (16)
+[a2/50d92b] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (17)
+[18/d12615] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (18)
+[71/3ee710] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (19)
+[1d/eeae19] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (20)
+Error executing process > 'gather_fastqs (2)'
+
+Caused by:
+  Process `gather_fastqs (2)` terminated with an error exit status (1)
+
+Command executed [/home/tread/miniconda3/envs/bactopia/share/bactopia-1.4.x/templates/gather_fastqs.sh]:
+
+  #!/bin/bash
+  set -e
+  set -u
+  if [ "false" == "true" ]; then
+      mkdir -p fastqs extra
+      touch fastqs/GCF_000009005.1.fastq.gz extra/GCF_000009005.1.fna.gz
+  else
+      mkdir -p fastqs
+      mkdir -p extra
+      if [ "assembly_accession" == "paired-end" ]; then
+          # Paired-End Reads
+          ln -s `readlink input.1` fastqs/GCF_000009005.1_R1.fastq.gz
+          ln -s `readlink input.2` fastqs/GCF_000009005.1_R2.fastq.gz
+          touch extra/empty.fna.gz
+      elif [ "assembly_accession" == "single-end" ]; then
+          # Single-End Reads
+          ln -s `readlink input.1` fastqs/GCF_000009005.1.fastq.gz
+          touch extra/empty.fna.gz
+      elif  [ "assembly_accession" == "hybrid" ]; then
+          # Paired-End Reads
+          ln -s `readlink input.1` fastqs/GCF_000009005.1_R1.fastq.gz
+          ln -s `readlink input.2` fastqs/GCF_000009005.1_R2.fastq.gz
+          ln -s `readlink input.3` extra/GCF_000009005.1.fastq.gz
+      elif [ "assembly_accession" == "sra_accession" ]; then
+          # Download accession from ENA/SRA
+          ASPERA=""
+          ASPERA_KEY=""
+          ASPERA_SPEED="--aspera_speed 100M"
+          FTP_ONLY=""
+          ARCHIVE=""
+  
+          # Check if ascp is available
+          if [ "false" == "true" ]; then
+              if [ "false" == "false" ]; then
+                  if which ascp; then
+                      # ascp found
+                      ASCP=`which ascp`
+                      ASPERA="--aspera $ASCP"
+                      if readlink $ASCP; then
+                          # ascp is symbolic link, need to get key
+                          ASPERA_KEY="--aspera_key `readlink -f $ASCP | sed 's=bin/ascp$=etc/asperaweb_id_dsa.openssh='`"
+                      fi
+                  fi
+              else
+                  FTP_ONLY="--ftp_only"
+              fi
+              ARCHIVE="ENA"
+          else
+              ARCHIVE="SRA"
+          fi
+  
+          # Download accession from ENA/SRA
+          fastq-dl GCF_000009005.1 $ARCHIVE \
+              --cpus 4 \
+              --outdir fastqs/ \
+              --group_by_experiment \
+              --is_experiment $ASPERA $ASPERA_KEY $ASPERA_SPEED $FTP_ONLY
+          touch extra/empty.fna.gz    
+      elif [ "true" == "true" ]; then
+          if [ "assembly_accession" == "assembly_accession" ]; then
+              # Download from NCBI assembly and simulate reads
+              mkdir fasta/
+              ncbi-genome-download bacteria -o ./ -F fasta -p 4 \
+                                            -s refseq -A GCF_000009005.1 -r 50
+              find -name "*GCF_000009005.1*.fna.gz" | xargs -I {} mv {} fasta/
+              if [ "refseq" == 'refseq' ]; then
+                  rename 's/(GCF_\d+).*/$1.fna.gz/' fasta/*
+              else
+                  rename 's/(GCA_\d+).*/$1.fna.gz/' fasta/*
+              fi
+              zcat fasta/GCF_000009005.fna.gz > GCF_000009005-art.fna
+          elif [ "assembly_accession" == "assembly" ]; then
+              if [ "false" == "true" ]; then
+                  zcat input.3 > GCF_000009005-art.fna
+              else 
+                  cat input.3 > GCF_000009005-art.fna
+              fi
+          fi
+          # Simulate reads from assembly, reads are 250bp without errors
+          art_illumina -p -ss MSv3 -l 250 -m 400 -s 30 --fcov 150 \
+                       -ir 0 -ir2 0 -dr 0 -dr2 0 -rs 42 \
+                       -na -qL 33 -qU 40 -o GCF_000009005_R \
+                       --id GCF_000009005 -i GCF_000009005-art.fna
+  
+          mv GCF_000009005_R1.fq fastqs/GCF_000009005_R1.fastq 
+          mv GCF_000009005_R2.fq fastqs/GCF_000009005_R2.fastq
+          pigz -p 4 --fast fastqs/*.fastq
+          cp GCF_000009005-art.fna extra/GCF_000009005.fna
+          pigz -p 4 --best extra/GCF_000009005.fna
+      fi
+  fi
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  Traceback (most recent call last):
+    File "/opt/conda/envs/bactopia-gather_fastqs/bin/ncbi-genome-download", line 10, in <module>
+      sys.exit(main())
+    File "/opt/conda/envs/bactopia-gather_fastqs/lib/python3.8/site-packages/ncbi_genome_download/__main__.py", line 26, in main
+      ret = args_download(args)
+    File "/opt/conda/envs/bactopia-gather_fastqs/lib/python3.8/site-packages/ncbi_genome_download/core.py", line 174, in args_download
+      return config_download(config)
+    File "/opt/conda/envs/bactopia-gather_fastqs/lib/python3.8/site-packages/ncbi_genome_download/core.py", line 193, in config_download
+      download_candidates = select_candidates(config)
+    File "/opt/conda/envs/bactopia-gather_fastqs/lib/python3.8/site-packages/ncbi_genome_download/core.py", line 287, in select_candidates
+      summary_file = get_summary(config.section, group, config.uri, config.use_cache)
+    File "/opt/conda/envs/bactopia-gather_fastqs/lib/python3.8/site-packages/ncbi_genome_download/core.py", line 400, in get_summary
+      fh.write(req.text)
+    File "/opt/conda/envs/bactopia-gather_fastqs/lib/python3.8/codecs.py", line 721, in write
+      return self.writer.write(data)
+    File "/opt/conda/envs/bactopia-gather_fastqs/lib/python3.8/codecs.py", line 378, in write
+      self.stream.write(data)
+  OSError: [Errno 28] No space left on device
+
+Work dir:
+  /home/tread/work/27/1c98320e19b68063b748c19a3c7fa2
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+
+
+    Bactopia Execution Summary
+    ---------------------------
+    Command Line    : nextflow run /home/tread/miniconda3/envs/bactopia//share/bactopia-1.4.x/main.nf --accessions tiramisu/Staphopia/test.list --datasets tiramisu/Staphopia/datasets/ --species 'Staphylococcus aureus' --out
+dir test_dir -profile slurm
+    Resumed         : false
+
+    Completed At    : 2020-08-17T17:32:27.066741-04:00
+    Duration        : 2m 8s
+    Success         : false
+    Exit Code       : 1
+    Error Report    : Error executing process > 'gather_fastqs (2)'
+
+Caused by:
+  Process `gather_fastqs (2)` terminated with an error exit status (1)
+
+Command executed [/home/tread/miniconda3/envs/bactopia/share/bactopia-1.4.x/templates/gather_fastqs.sh]:
+
+  #!/bin/bash
+  set -e
+  set -u
+  if [ "false" == "true" ]; then
+      mkdir -p fastqs extra
+      touch fastqs/GCF_000009005.1.fastq.gz extra/GCF_000009005.1.fna.gz
+  else
+      mkdir -p fastqs
+      mkdir -p extra
+      if [ "assembly_accession" == "paired-end" ]; then
+          # Paired-End Reads
+          ln -s `readlink input.1` fastqs/GCF_000009005.1_R1.fastq.gz
+          ln -s `readlink input.2` fastqs/GCF_000009005.1_R2.fastq.gz
+          touch extra/empty.fna.gz
+      elif [ "assembly_accession" == "single-end" ]; then
+          # Single-End Reads
+          ln -s `readlink input.1` fastqs/GCF_000009005.1.fastq.gz
+          touch extra/empty.fna.gz
+      elif  [ "assembly_accession" == "hybrid" ]; then
+          # Paired-End Reads
+          ln -s `readlink input.1` fastqs/GCF_000009005.1_R1.fastq.gz
+          ln -s `readlink input.2` fastqs/GCF_000009005.1_R2.fastq.gz
+          ln -s `readlink input.3` extra/GCF_000009005.1.fastq.gz
+      elif [ "assembly_accession" == "sra_accession" ]; then
+          # Download accession from ENA/SRA
+          ASPERA=""
+          ASPERA_KEY=""
+          ASPERA_SPEED="--aspera_speed 100M"
+          FTP_ONLY=""
+          ARCHIVE=""
+  
+          # Check if ascp is available
+          if [ "false" == "true" ]; then
+              if [ "false" == "false" ]; then
+                  if which ascp; then
+                      # ascp found
+                      ASCP=`which ascp`
+                      ASPERA="--aspera $ASCP"
+                      if readlink $ASCP; then
+                          # ascp is symbolic link, need to get key
+                          ASPERA_KEY="--aspera_key `readlink -f $ASCP | sed 's=bin/ascp$=etc/asperaweb_id_dsa.openssh='`"
+                      fi
+                  fi
+              else
+                  FTP_ONLY="--ftp_only"
+              fi
+              ARCHIVE="ENA"
+          else
+              ARCHIVE="SRA"
+          fi
+  
+          # Download accession from ENA/SRA
+          fastq-dl GCF_000009005.1 $ARCHIVE \
+              --cpus 4 \
+              --outdir fastqs/ \
+              --group_by_experiment \
+              --is_experiment $ASPERA $ASPERA_KEY $ASPERA_SPEED $FTP_ONLY
+          touch extra/empty.fna.gz    
+      elif [ "true" == "true" ]; then
+          if [ "assembly_accession" == "assembly_accession" ]; then
+              # Download from NCBI assembly and simulate reads
+              mkdir fasta/
+              ncbi-genome-download bacteria -o ./ -F fasta -p 4 \
+                                            -s refseq -A GCF_000009005.1 -r 50
+              find -name "*GCF_000009005.1*.fna.gz" | xargs -I {} mv {} fasta/
+              if [ "refseq" == 'refseq' ]; then
+                  rename 's/(GCF_\d+).*/$1.fna.gz/' fasta/*
+              else
+                  rename 's/(GCA_\d+).*/$1.fna.gz/' fasta/*
+              fi
+              zcat fasta/GCF_000009005.fna.gz > GCF_000009005-art.fna
+          elif [ "assembly_accession" == "assembly" ]; then
+              if [ "false" == "true" ]; then
+                  zcat input.3 > GCF_000009005-art.fna
+              else 
+                  cat input.3 > GCF_000009005-art.fna
+              fi
+          fi
+          # Simulate reads from assembly, reads are 250bp without errors
+          art_illumina -p -ss MSv3 -l 250 -m 400 -s 30 --fcov 150 \
+                       -ir 0 -ir2 0 -dr 0 -dr2 0 -rs 42 \
+                       -na -qL 33 -qU 40 -o GCF_000009005_R \
+                       --id GCF_000009005 -i GCF_000009005-art.fna
+  
+          mv GCF_000009005_R1.fq fastqs/GCF_000009005_R1.fastq 
+          mv GCF_000009005_R2.fq fastqs/GCF_000009005_R2.fastq
+          pigz -p 4 --fast fastqs/*.fastq
+          cp GCF_000009005-art.fna extra/GCF_000009005.fna
+          pigz -p 4 --best extra/GCF_000009005.fna
+      fi
+  fi
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  Traceback (most recent call last):
+    File "/opt/conda/envs/bactopia-gather_fastqs/bin/ncbi-genome-download", line 10, in <module>
+      sys.exit(main())
+    File "/opt/conda/envs/bactopia-gather_fastqs/lib/python3.8/site-packages/ncbi_genome_download/__main__.py", line 26, in main
+      ret = args_download(args)
+    File "/opt/conda/envs/bactopia-gather_fastqs/lib/python3.8/site-packages/ncbi_genome_download/core.py", line 174, in args_download
+      return config_download(config)
+    File "/opt/conda/envs/bactopia-gather_fastqs/lib/python3.8/site-packages/ncbi_genome_download/core.py", line 193, in config_download
+      download_candidates = select_candidates(config)
+    File "/opt/conda/envs/bactopia-gather_fastqs/lib/python3.8/site-packages/ncbi_genome_download/core.py", line 287, in select_candidates
+      summary_file = get_summary(config.section, group, config.uri, config.use_cache)
+    File "/opt/conda/envs/bactopia-gather_fastqs/lib/python3.8/site-packages/ncbi_genome_download/core.py", line 400, in get_summary
+      fh.write(req.text)
+    File "/opt/conda/envs/bactopia-gather_fastqs/lib/python3.8/codecs.py", line 721, in write
+      return self.writer.write(data)
+    File "/opt/conda/envs/bactopia-gather_fastqs/lib/python3.8/codecs.py", line 378, in write
+      self.stream.write(data)
+  OSError: [Errno 28] No space left on device
+
+Work dir:
+  /home/tread/work/27/1c98320e19b68063b748c19a3c7fa2
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+
+    Launch Dir      : /home/tread
+    Working Dir     : /home/tread/work (Total Size: 729.607M)
+    Working Dir Size: 729.607M
+
+    
+WARN: Killing pending tasks (1)
+
+executor >  slurm (25)
+[27/1c9832] process > gather_fastqs (2)                   [100%] 22 of 22, failed: 21, retries: 20 ✘
+[b0/2de45f] process > fastq_status (1)                    [100%] 1 of 1 ✔
+[-        ] process > estimate_genome_size (ERX1033700)   -
+[-        ] process > qc_reads                            -
+[-        ] process > qc_original_summary                 -
+[-        ] process > qc_final_summary                    -
+[-        ] process > assemble_genome                     -
+[-        ] process > assembly_qc                         -
+[-        ] process > make_blastdb                        -
+[-        ] process > annotate_genome                     -
+[-        ] process > count_31mers                        -
+[-        ] process > sequence_type                       -
+[-        ] process > ariba_analysis                      -
+[-        ] process > minmer_sketch                       -
+[-        ] process > minmer_query                        -
+[-        ] process > call_variants                       -
+[-        ] process > download_references                 -
+[-        ] process > call_variants_auto                  -
+[54/f040c4] process > update_antimicrobial_resistance (1) [100%] 1 of 1 ✔
+[-        ] process > antimicrobial_resistance            -
+[-        ] process > plasmid_blast                       -
+[-        ] process > blast_genes                         -
+[-        ] process > blast_primers                       -
+[-        ] process > blast_proteins                      -
+[-        ] process > mapping_query                       -
+[87/a7d110] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (16)
+[a2/50d92b] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (17)
+[18/d12615] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (18)
+[71/3ee710] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (19)
+[1d/eeae19] NOTE: Process `gather_fastqs (2)` terminated with an error exit status (1) -- Execution is retried (20)
+Error executing process > 'gather_fastqs (2)'
+
+Caused by:
+  Process `gather_fastqs (2)` terminated with an error exit status (1)
+
+Command executed [/home/tread/miniconda3/envs/bactopia/share/bactopia-1.4.x/templates/gather_fastqs.sh]:
+
+  #!/bin/bash
+  set -e
+  set -u
+  if [ "false" == "true" ]; then
+      mkdir -p fastqs extra
+      touch fastqs/GCF_000009005.1.fastq.gz extra/GCF_000009005.1.fna.gz
+  else
+      mkdir -p fastqs
+      mkdir -p extra
+      if [ "assembly_accession" == "paired-end" ]; then
+          # Paired-End Reads
+          ln -s `readlink input.1` fastqs/GCF_000009005.1_R1.fastq.gz
+          ln -s `readlink input.2` fastqs/GCF_000009005.1_R2.fastq.gz
+          touch extra/empty.fna.gz
+      elif [ "assembly_accession" == "single-end" ]; then
+          # Single-End Reads
+          ln -s `readlink input.1` fastqs/GCF_000009005.1.fastq.gz
+          touch extra/empty.fna.gz
+      elif  [ "assembly_accession" == "hybrid" ]; then
+          # Paired-End Reads
+          ln -s `readlink input.1` fastqs/GCF_000009005.1_R1.fastq.gz
+          ln -s `readlink input.2` fastqs/GCF_000009005.1_R2.fastq.gz
+          ln -s `readlink input.3` extra/GCF_000009005.1.fastq.gz
+      elif [ "assembly_accession" == "sra_accession" ]; then
+          # Download accession from ENA/SRA
+          ASPERA=""
+          ASPERA_KEY=""
+          ASPERA_SPEED="--aspera_speed 100M"
+          FTP_ONLY=""
+          ARCHIVE=""
+  
+          # Check if ascp is available
+          if [ "false" == "true" ]; then
+              if [ "false" == "false" ]; then
+                  if which ascp; then
+                      # ascp found
+                      ASCP=`which ascp`
+                      ASPERA="--aspera $ASCP"
+                      if readlink $ASCP; then
+                          # ascp is symbolic link, need to get key
+                          ASPERA_KEY="--aspera_key `readlink -f $ASCP | sed 's=bin/ascp$=etc/asperaweb_id_dsa.openssh='`"
+                      fi
+                  fi
+              else
+                  FTP_ONLY="--ftp_only"
+              fi
+              ARCHIVE="ENA"
+          else
+              ARCHIVE="SRA"
+          fi
+  
+          # Download accession from ENA/SRA
+          fastq-dl GCF_000009005.1 $ARCHIVE \
+              --cpus 4 \
+              --outdir fastqs/ \
+              --group_by_experiment \
+              --is_experiment $ASPERA $ASPERA_KEY $ASPERA_SPEED $FTP_ONLY
+          touch extra/empty.fna.gz    
+      elif [ "true" == "true" ]; then
+          if [ "assembly_accession" == "assembly_accession" ]; then
+              # Download from NCBI assembly and simulate reads
+              mkdir fasta/
+              ncbi-genome-download bacteria -o ./ -F fasta -p 4 \
+                                            -s refseq -A GCF_000009005.1 -r 50
+              find -name "*GCF_000009005.1*.fna.gz" | xargs -I {} mv {} fasta/
+              if [ "refseq" == 'refseq' ]; then
+                  rename 's/(GCF_\d+).*/$1.fna.gz/' fasta/*
+              else
+                  rename 's/(GCA_\d+).*/$1.fna.gz/' fasta/*
+              fi
+              zcat fasta/GCF_000009005.fna.gz > GCF_000009005-art.fna
+          elif [ "assembly_accession" == "assembly" ]; then
+              if [ "false" == "true" ]; then
+                  zcat input.3 > GCF_000009005-art.fna
+              else 
+                  cat input.3 > GCF_000009005-art.fna
+              fi
+          fi
+          # Simulate reads from assembly, reads are 250bp without errors
+          art_illumina -p -ss MSv3 -l 250 -m 400 -s 30 --fcov 150 \
+                       -ir 0 -ir2 0 -dr 0 -dr2 0 -rs 42 \
+                       -na -qL 33 -qU 40 -o GCF_000009005_R \
+                       --id GCF_000009005 -i GCF_000009005-art.fna
+  
+          mv GCF_000009005_R1.fq fastqs/GCF_000009005_R1.fastq 
+          mv GCF_000009005_R2.fq fastqs/GCF_000009005_R2.fastq
+          pigz -p 4 --fast fastqs/*.fastq
+          cp GCF_000009005-art.fna extra/GCF_000009005.fna
+          pigz -p 4 --best extra/GCF_000009005.fna
+      fi
+  fi
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  Traceback (most recent call last):
+    File "/opt/conda/envs/bactopia-gather_fastqs/bin/ncbi-genome-download", line 10, in <module>
+      sys.exit(main())
+    File "/opt/conda/envs/bactopia-gather_fastqs/lib/python3.8/site-packages/ncbi_genome_download/__main__.py", line 26, in main
+      ret = args_download(args)
+    File "/opt/conda/envs/bactopia-gather_fastqs/lib/python3.8/site-packages/ncbi_genome_download/core.py", line 174, in args_download
+      return config_download(config)
+    File "/opt/conda/envs/bactopia-gather_fastqs/lib/python3.8/site-packages/ncbi_genome_download/core.py", line 193, in config_download
+      download_candidates = select_candidates(config)
+    File "/opt/conda/envs/bactopia-gather_fastqs/lib/python3.8/site-packages/ncbi_genome_download/core.py", line 287, in select_candidates
+      summary_file = get_summary(config.section, group, config.uri, config.use_cache)
+    File "/opt/conda/envs/bactopia-gather_fastqs/lib/python3.8/site-packages/ncbi_genome_download/core.py", line 400, in get_summary
+      fh.write(req.text)
+    File "/opt/conda/envs/bactopia-gather_fastqs/lib/python3.8/codecs.py", line 721, in write
+      return self.writer.write(data)
+    File "/opt/conda/envs/bactopia-gather_fastqs/lib/python3.8/codecs.py", line 378, in write
+      self.stream.write(data)
+  OSError: [Errno 28] No space left on device
+
+Work dir:
+  /home/tread/work/27/1c98320e19b68063b748c19a3c7fa2
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
